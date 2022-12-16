@@ -1,0 +1,711 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* PRIMARY */
+  --orange: hsl(26, 100%, 55%);
+  --pale-orange: hsl(25, 100%, 94%);
+  /* Neutral */
+  --very-dark-blue: hsl(220, 13%, 13%);
+  --dark-grayish-blue: hsl(219, 9%, 45%);
+  --grayish-blue: hsl(220, 14%, 75%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --font-size-p: 16px;
+}
+
+body {
+  height: 100vh;
+  padding: 2rem 20rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+nav #box-one-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav #box-one-nav .logo > #imgLogo {
+  width: 8rem;
+  height: 1.4rem;
+  position: relative;
+}
+
+nav #box-one-nav > .logo > .iconNav {
+  width: 2rem;
+  height: 1.4rem;
+  cursor: pointer;
+  position: relative;
+}
+
+nav #box-one-nav > img {
+  width: 8rem;
+  height: 1.4rem;
+  position: relative;
+  cursor: pointer;
+}
+
+nav #box-one-nav > .ulclass {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav #box-one-nav .ulclass li > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+nav #box-one-nav .ulclass li > a:hover {
+  color: var(--very-dark-blue);
+  transition: 1s;
+}
+
+#box-car-perfil {
+  display: flex;
+  gap: 3rem;
+}
+
+#box-car-perfil .car {
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+#box-car-perfil .car:hover {
+  filter: opacity(50%);
+  transition: 0.6s;
+}
+
+#box-car-perfil .avatar {
+  height: 3rem;
+  border-radius: 50%;
+  position: relative;
+  bottom: 1rem;
+  cursor: pointer;
+}
+
+#box-car-perfil .avatar:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--grayish-blue);
+}
+
+section {
+  padding: 4rem 3rem;
+  display: flex;
+  gap: 10rem;
+  height: 50rem;
+}
+
+#box-img {
+  width: 38rem;
+  display: flex;
+  flex-direction: column;
+  height: 37rem;
+  gap: 3rem;
+}
+
+.box-one {
+  height: 32rem;
+  width: 100%;
+}
+
+.great-img {
+  height: 30rem;
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* IMG LEFET AND RIGTH */
+
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  width: 24rem;
+  height: 22rem;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  padding: 0rem 1.2rem;
+  z-index: 1;
+}
+
+.icons > button img {
+  height: 1rem;
+}
+
+.icons > button {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--white);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+/* NEW NAV */
+
+.newNav {
+  width: 300px;
+  height: 100%;
+  background-color: var(--white);
+  padding-left: 2rem;
+  position: fixed;
+  z-index: 3;
+  left: -1rem;
+  top: -1rem;
+  padding: 3rem 2.5rem;
+}
+
+#liOne {
+  margin-bottom: 1.5rem;
+}
+
+.newNav > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+}
+
+.newNav ul li > a {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.newNav ul li > a:hover {
+  color: var(--dark-grayish-blue);
+}
+
+.box-two {
+  display: flex;
+  gap: 1.9rem;
+  width: 100%;
+}
+
+.borderBoxImg {
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 15px;
+  height: 6rem;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+  width: 6rem;
+  height: 5.8rem;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+#box-img > div #opacity {
+  filter: opacity(40%);
+}
+
+#box-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  height: 37rem;
+  justify-content: center;
+}
+
+#box-info .child1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+#box-info .child2 {
+  font-size: 52px;
+  font-weight: 600;
+}
+
+#box-info .child3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+#price {
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+#price span {
+  background-color: var(--pale-orange);
+  font-size: 18px;
+  width: 3.5rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: var(--orange);
+  border-radius: 5px;
+  position: relative;
+}
+
+#qtde {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--light-grayish-blue);
+  width: 15rem;
+  border-radius: 5px;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#price p {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.price-b {
+  font-size: 17px;
+  color: hsl(220, 14%, 75%);
+  font-weight: 700;
+  position: relative;
+}
+
+#btnOne,
+#btnTwo {
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--orange);
+  font-size: 21px;
+  border: 0;
+  background-color: transparent;
+}
+
+#qtde-car p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#qtde-car {
+  display: flex;
+  height: 3.3rem;
+  gap: 1rem;
+  position: relative;
+}
+
+#qtde-car .add-Car {
+  width: 100%;
+  border: 0;
+  background-color: var(--orange);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#qtde-car .add-Car:hover {
+  filter: opacity(60%);
+  transition: 1.2s;
+}
+
+#qtde-car #add-Car img {
+  width: 1.6rem;
+  color: var(--white);
+  position: relative;
+  top: -4px;
+}
+
+.markQtde {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 45%;
+  background-color: var(--orange);
+  position: absolute;
+  margin-left: 0.6rem;
+  margin-top: -0.2rem;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.box-cart {
+  width: 20rem;
+  height: 12rem;
+  background-color: var(--white);
+  position: absolute;
+  margin-left: -12rem;
+  margin-top: 4.6rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  box-shadow: 0px 10px 17px 0px hsl(220, 14%, 75%);
+  z-index: 2;
+}
+
+.box-cart2 {
+  width: 20rem;
+  height: 14rem;
+  background-color: var(--white);
+  position: absolute;
+  margin-left: -12rem;
+  margin-top: 4.6rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  box-shadow: 0px 10px 17px 0px hsl(220, 14%, 75%);
+  z-index: 2;
+}
+
+.box-cart2 p {
+  padding: 1rem 1.5rem;
+}
+
+.box-cart2 span {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(220, 14%, 75%);
+}
+
+.box-cart2 div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(219, 9%, 45%);
+  font-size: 14px;
+}
+
+.box-cart p {
+  padding: 1rem 1.5rem;
+}
+
+.box-cart span {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(220, 14%, 75%);
+}
+
+.box-cart div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(219, 9%, 45%);
+  font-size: 14px;
+}
+
+.itemInsert {
+  display: flex;
+  padding: 1rem;
+  font-size: 10px;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.iconRemove {
+  width: 1rem;
+  cursor: pointer;
+}
+
+.itemInsert p {
+  font-size: 13px;
+  color: hsl(220, 14%, 75%);
+  width: 12rem;
+}
+
+.itemInsert .imgCart {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.itemInsert button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+@media (max-width: 1828px) {
+  section {
+    gap: 3rem;
+    padding: 5rem 8rem;
+  }
+
+  body {
+    padding: 3rem 16rem;
+  }
+}
+
+@media (max-width: 1629px) {
+  section {
+    gap: 6rem;
+    padding: 3rem 6rem;
+    height: 43rem;
+  }
+
+  body {
+    padding: 1.5rem 15rem;
+  }
+
+  #box-img {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1562px) {
+  section {
+    gap: 6rem;
+    padding: 5rem 5rem;
+    height: 43rem;
+  }
+
+  #box-img {
+    width: 27rem;
+    height: 33rem;
+  }
+  .great-img {
+    height: 25rem;
+    width: 100%;
+  }
+
+  #box-info {
+    gap: 0.7rem;
+    height: 33rem;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .borderBoxImg {
+    height: 5rem;
+  }
+
+  #box-info .child1 {
+    font-size: 12px;
+  }
+
+  #box-info .child2 {
+    font-size: 45px;
+  }
+
+  #box-info .child3 {
+    font-size: 14px;
+  }
+
+  #price {
+    font-size: 24px;
+  }
+
+  #price span {
+    font-size: 15px;
+    height: 1.8rem;
+  }
+
+  #price p {
+    font-size: 18px;
+  }
+
+  #qtde-car {
+    height: 2.4rem;
+  }
+
+  #qtde-car .add-Car {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1459px) {
+  body {
+    padding: 1.5rem 8rem;
+  }
+
+  section {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1186px) {
+  body {
+    padding: 1.5rem 4rem;
+  }
+
+  section {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 984px) {
+  body {
+    padding: 1.5rem 1rem;
+  }
+
+  section {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 880px) {
+  #qtde-car {
+    flex-direction: column;
+    height: 7rem;
+  }
+
+  #qtde,
+  .add-Car {
+    height: 3rem;
+    width: 100%;
+  }
+
+  #box-info {
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .box-one {
+    height: 22rem;
+  }
+
+  #box-img {
+    width: 24rem;
+    height: 30rem;
+  }
+
+  section {
+    padding: 1rem 0.1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-two {
+    gap: 1rem;
+  }
+
+  .great-img {
+    height: 22rem;
+    width: 100%;
+  }
+
+  #box-info {
+    position: relative;
+    top: -1rem;
+  }
+
+  #box-info .child1 {
+    font-size: 10px;
+  }
+
+  #box-info .child2 {
+    font-size: 40px;
+  }
+
+  #box-info .child3 {
+    font-size: 12px;
+  }
+
+  #price {
+    font-size: 20px;
+  }
+
+  #price span {
+    font-size: 13px;
+  }
+
+  #price p {
+    font-size: 15px;
+  }
+
+  #qtde,
+  .add-Car {
+    height: 3rem;
+  }
+
+  #qtde-car {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 479px) {
+  #box-img {
+    width: 100%;
+    height: 80rem;
+    background-color: aqua;
+  }
+
+  .icons {
+    width: 100%;
+  }
+
+  .great-img {
+    height: 25rem;
+  }
+
+  body {
+    padding: 1rem 0rem;
+  }
+
+  nav {
+    padding: 0.3rem 1rem 0rem 1rem;
+    margin-bottom: 0rem;
+  }
+
+  #box-info {
+    padding: 0rem 0.8rem;
+    top: 1rem;
+  }
+
+  section {
+    padding: 0rem 0rem;
+    align-items: baseline;
+  }
+
+  .great-img {
+    border-radius: 0%;
+  }
+}
