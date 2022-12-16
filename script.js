@@ -137,12 +137,14 @@ car.addEventListener("click", () => {
 const div = document.querySelector("nav>#box-one-nav");
 const ul = document.querySelector("nav>#box-one-nav>ul");
 const liOne = document.querySelector("nav>#box-one-nav>ul>#liOne");
-const logo = document.querySelector("nav>#box-one-nav>.logo>img");
+const logo = document.querySelector("nav>#box-one-nav>#imgLogo");
 const iconNav = document.createElement("img");
 const closeNewnav = document.createElement("img");
 const boxImg = document.querySelector("section>#box-img");
 const boxTwo = document.querySelector("section>#box-img>.box-two");
 const newNav = document.createElement("div");
+const priceB = document.querySelector("section>#box-info>.price-b")
+const price  = document.querySelector('section>#box-info>#price')
 
 const boxOne = document.querySelector("section>#box-img>.box-one");
 const divBtnmn = document.createElement("div");
@@ -151,43 +153,30 @@ const btnNext = document.createElement("button");
 const imgPrevious = document.createElement("img");
 const imgNext = document.createElement("img");
 
-iconNav.setAttribute(
-  "src",
-  "images/logo.svg"
-);
 closeNewnav.setAttribute(
   "src",
   "images/icon-close.svg"
 );
 
 const divChild = div.children;
-const removeIcon = () => {
-  for (let i = 0; i < divChild.length; i++) {
-    if (divChild[i].tagName === "IMG") {
-      div.removeChild(iconNav);
-    }
-    if (divChild[i].className === "newNav") {
-      div.removeChild(newNav);
-    }
-  }
-};
-
 const boxOnechildren = boxOne.children
 
 const oneResponse = (y) => {
-  if (y.matches) {
-    logo.setAttribute(
-      "src",
-      "images/icon-menu.svg"
-    );
-    logo.removeAttribute("id", "imgLogo");
-    logo.classList.add("iconNav");
+  if (y.matches) {    
+    price.append(priceB)
+    priceB.classList.add('priceb')
+    iconNav.setAttribute("src","images/icon-menu.svg");
+    iconNav.classList.add("iconNav")
+    div.append(iconNav)
+    boxImg.removeChild(boxTwo);
+    iconNav.classList.add("iconNav");  
     div.removeChild(ul);
     div.append(iconNav);
-    boxImg.removeChild(boxTwo);
+    iconNav.insertAdjacentElement("afterend", logo);
+   
 
     // NAV EVENT //
-    logo.addEventListener("click", () => {
+    iconNav.addEventListener("click", () => {
       newNav.classList.add("newNav");
       ul.classList.remove("ulclass");
       liOne.append(closeNewnav);
@@ -216,15 +205,18 @@ const oneResponse = (y) => {
     boxOne.append(divBtnmn);
     divBtnmn.insertAdjacentElement("afterend", greatImg);
   } else {
+    /*
     logo.setAttribute(
       "src", "images/logo.svg")
     logo.classList.remove("iconNav");
-    logo.setAttribute("id", "imgLogo");
+    logo.setAttribute("id", "imgLogo");*/
     ul.classList.add("ulclass");
     div.append(ul);
     boxImg.append(boxTwo);
-    removeIcon();
+  /*  removeIcon(); */
     if (boxOnechildren.length > 1) {
+      div.removeChild(iconNav);
+      div.removeChild(newNav);
       boxOne.removeChild(divBtnmn);
       liOne.removeChild(closeNewnav);
     }
