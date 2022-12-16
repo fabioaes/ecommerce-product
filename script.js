@@ -25,7 +25,7 @@ img.forEach((item) => {
     if (className.value === "item1") {
       greatImg.setAttribute(
         "src",
-        "images/image-product-1.jpg"
+        "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/image-product-1.jpg"
       );
       small[0].setAttribute("class", "borderBoxImg");
       item.setAttribute("id", "opacity");
@@ -33,7 +33,7 @@ img.forEach((item) => {
     if (className.value === "item2") {
       greatImg.setAttribute(
         "src",
-        "images/image-product-2.jpg"
+        "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/image-product-2.jpg"
       );
       small[1].setAttribute("class", "borderBoxImg");
       item.setAttribute("id", "opacity");
@@ -41,7 +41,7 @@ img.forEach((item) => {
     if (className.value === "item3") {
       greatImg.setAttribute(
         "src",
-        "images/image-product-3.jpg"
+        "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/image-product-3.jpg"
       );
       small[2].setAttribute("class", "borderBoxImg");
       item.setAttribute("id", "opacity");
@@ -49,7 +49,7 @@ img.forEach((item) => {
     if (className.value === "item4") {
       greatImg.setAttribute(
         "src",
-        "images/image-product-4.jpg"
+        "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/image-product-4.jpg"
       );
       small[3].setAttribute("class", "borderBoxImg");
       item.setAttribute("id", "opacity");
@@ -104,13 +104,13 @@ car.addEventListener("click", () => {
     divBox.classList.add("itemInsert");
     img.setAttribute(
       "src",
-      "images/image-product-1-thumbnail.jpg"
+      "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/image-product-1-thumbnail.jpg"
     );
     img.classList.add("imgCart");
     pInsert.innerText = `${titleProduct.innerText}`;
     iconRemove.setAttribute(
       "src",
-      "images/icon-delete.svg"
+      "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/icon-delete.svg"
     );
     iconRemove.classList.add("iconRemove");
     btnCheckout.innerText = "Checkout";
@@ -155,7 +155,7 @@ const imgNext = document.createElement("img");
 
 closeNewnav.setAttribute(
   "src",
-  "images/icon-close.svg"
+  "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/icon-close.svg"
 );
 
 const divChild = div.children;
@@ -165,7 +165,7 @@ const oneResponse = (y) => {
   if (y.matches) {    
     price.append(priceB)
     priceB.classList.add('priceb')
-    iconNav.setAttribute("src","images/icon-menu.svg");
+    iconNav.setAttribute("src","https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/icon-menu.svg");
     iconNav.classList.add("iconNav")
     div.append(iconNav)
     boxImg.removeChild(boxTwo);
@@ -193,11 +193,11 @@ const oneResponse = (y) => {
     divBtnmn.classList.add("icons");
     imgPrevious.setAttribute(
       "src",
-      "images/icon-previous.svg"
+      "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/icon-previous.svg"
     );
     imgNext.setAttribute(
       "src",
-      "images/icon-next.svg"
+      "https://raw.githubusercontent.com/fabioaes/ecommerce-product/0248a8748eeb8e163a44d62ecbad1033a9186890/images/icon-next.svg"
     );
     btnPrevious.append(imgPrevious);
     btnNext.append(imgNext);
